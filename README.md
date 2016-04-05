@@ -5,18 +5,26 @@
 1. Property File : src/main/resources/*.Properties
 2. Custom Logic  : File com.symantec.cpe.storm.LogicBolt -> Add any custom logic in execute method, We will add different spouts down the line 
 
-## Run Options 
-Local mode within eclipse IDE or Remote to any cluster
-
-```sh
-eg : Remote : storm jar -c nimbus.host=<hostname> -c nimbus.port=<port_number> com.symantec.cpe.StartService <PropertyFile>
-```
 
 ## Building project 
 
 1. Download this project(rabbitmq spout and ) https://github.com/ppat/storm-rabbitmq  and install the jar
 2. mvn install:install-file -Dfile=${WORKSPACE}/${PROJECT}/storm-rabbitmq-0.6.2-SNAPSHOT.jar -DgroupId=io.latent -DartifactId=storm-rabbitmq  -Dversion=0.6.2-SNAPSHOT -Dpackaging=jar
 3. mvn clean test package -U
+
+## Deploying project 
+
+1. Update the property File
+2. Add any logic if required in the Logic Bolt , build Jar as per above
+3. Run as per the below command
+
+## Run Options 
+Local mode within eclipse IDE or Remote to any cluster
+
+```sh
+eg : storm jar -c nimbus.host=<hostname> -c nimbus.port=<port_number> com.symantec.cpe.StartService <PropertyFile>
+eg : storm jar  com.symantec.cpe.StartService <PropertyFile>
+```
 
 
 ## RabbitMQ Input Parameters
