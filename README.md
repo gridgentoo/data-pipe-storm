@@ -60,3 +60,5 @@ parallelCount				Integer			1
 metricsParallelCount		Integer			1	 
 topology.workers			Integer			1										Maximum value for this parameter is equal to the number of Storm supervisor nodes on the cluster.
 ```
+
+Note : Only one source point at a time, either Kafka or RabbitMq
