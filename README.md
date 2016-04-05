@@ -9,7 +9,7 @@ Custom Logic  : File com.symantec.cpe.storm.LogicBolt -> Add any custom logic in
 Local mode within eclipse IDE or Remote to any cluster
 
 ```sh
-eg : Remote : storm jar -c nimbus.host=<hostname> -c nimbus.port=<port_number> <java_main_class> <PropertyFile>
+eg : Remote : storm jar -c nimbus.host=<hostname> -c nimbus.port=<port_number> com.symantec.cpe.StartService <PropertyFile>
 ```
 
 ## Building project 
