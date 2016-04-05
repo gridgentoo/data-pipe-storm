@@ -30,7 +30,7 @@ eg : storm jar  data-pipe-storm-0.0.2-SNAPSHOT-jar-with-dependencies.jar com.sym
 ## Kafka Input Parameters
 ```sh
 Property          	Type      (format)Example
-streamName         String     datapipe
+streamName         String     datapipe   <reused as group.id Consumers>
 sourceZooKeeperURL String     localhost:2181
 inputTopic         String     source-ga 
  ```
