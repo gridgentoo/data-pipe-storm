@@ -1,1 +1,0 @@
-{"type":"record","name":"RRSLog","namespace":"com.symantec.adl.ingestion.schema.avro","fields":[{"name":"blob","type":["null","bytes"]}]}
