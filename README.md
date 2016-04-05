@@ -2,8 +2,8 @@
 
 ## Goal : Reading streaming data from rabbbitmq or kafka and writing the data to another endpoint and add Custom Logic if needed
 
-Property File : src/main/resources/*.Properties
-Custom Logic  : File com.symantec.cpe.storm.LogicBolt -> Add any custom logic in execute method, We will add different spouts down the line 
+1. Property File : src/main/resources/*.Properties
+2. Custom Logic  : File com.symantec.cpe.storm.LogicBolt -> Add any custom logic in execute method, We will add different spouts down the line 
 
 ## Run Options 
 Local mode within eclipse IDE or Remote to any cluster
